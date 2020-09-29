@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Welcome</title>
+    <h1>Welcome to Hexaland's Covid-Connect App </h1>
+        <br><br>
+
+</head>
+<body>
+<form action="/hex/create" method="POST">
+    <label>Enter Neighbouring Hex Name :</label> <input type="text" name="neighbor">
+    <br><br>
+    <label>Enter Border Number: </label> <input type="text" name="border">
+    <br><br>
+    <input type="submit" value="Create Hexagon">
+</form>
+
+<br><br>
+
+<form action="/hex/fetch" method="GET">
+    <label>Hex Name</label> <input type="text" name="hexname">
+    <input type="submit"  value="Get Hexagon Details">
+</form>
+
+<br> <br>
+
+<div class="container">
+  <h2>Welcome to Hexaland's Covid-Connect App !</h2>
+    <br><br><br>
+  <form class="form-inline" action="/hex/fetch">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="email" class="form-control" id="name" placeholder="Enter Hex Name" name="email">
+    </div>
+<!--    <div class="form-group">-->
+<!--      <label for="pwd">Password:</label>-->
+<!--      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">-->
+<!--    </div>-->
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
+
+</body>
+</html>
